@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 16px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#editor-body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: chartreuse;
+}
+
+.text-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-left: 5mm;
+    padding-right: 5mm;
+    padding-top: 5mm;
+    padding-bottom: 5mm;
+    resize: none;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    white-space: pre;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+#edit {
+    background-color: violet;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+#preview {
+    background-color: gray;
+    z-index: 2;
+}
+
+.edit-mode #edit {
+    z-index: 2;
+}
+
+.edit-mode #preview {
+    z-index: 1;
+}

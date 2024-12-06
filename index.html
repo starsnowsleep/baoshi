@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>BaoShiNotes</title>
@@ -9,7 +10,12 @@
 </head>
 
 <body>
-  hello world!
+  <div id="editor-body">
+    <textarea id="edit" spellcheck="false" class="text-area"></textarea>
+    <div id="preview" class="text-area"></div>
+  </div>
+  <script src="marked.min.js"></script>
   <script src="main.js"></script>
 </body>
+
 </html>
